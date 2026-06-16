@@ -1,0 +1,36 @@
+# Secrets
+.env
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Logs & data
+*.log
+signals_log.csv
+trades_log.csv
+scalp_signals_log.csv
+*_log.csv
+*.png
+
+# Large auto-downloaded JPL ephemeris (skyfield fetches on first run)
+de421.bsp
+*.bsp
+
+# Scratch / temp reports
+calibration_report.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Trade-data CSV logs (stale live logs; not part of the strategy spec)
+*.csv

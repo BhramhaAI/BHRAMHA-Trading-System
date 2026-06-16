@@ -1,0 +1,8 @@
+# BHRAMHA — Track 2 (Strategy Skill) dependencies
+pandas>=2.0
+numpy>=1.24
+requests>=2.31
+skyfield>=1.45        # JPL ephemeris for correct sidereal Vedic math
+
+# Optional — only needed for the live execution path (Track 1)
+# astral>=3.2          # precise sunrise/sunset for Rahu Kalam windows
