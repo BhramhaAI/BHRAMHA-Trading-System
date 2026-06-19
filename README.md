@@ -26,7 +26,14 @@ python skill_runner.py backtest --symbol BTCUSDT --interval 4h --days 365
 
 # A live strategy signal with a plain-English rationale:
 python skill_runner.py signal   --symbol BTCUSDT --interval 15m
+
+# A visual dashboard — live Vedic Panchang, CMC context, and the backtest proof:
+python dashboard.py             # http://127.0.0.1:5000
 ```
+
+The dashboard renders the current nakshatra/hora/tithi, the live CoinMarketCap
+Fear & Greed and regime context, and the validated backtest + Vedic ablation —
+a one-glance demo of everything below.
 
 ---
 
@@ -158,6 +165,7 @@ vedic_core timing      ─┘         (deterministic)            (explanation on
 | `strategy_core.py` | Pure `evaluate()` — no I/O, no side effects, backtestable |
 | `backtester.py` | Walk-forward backtester + stats |
 | `groq_client.py`, `skill_runner.py` | LLM narration + skill CLI |
+| `dashboard.py` | Flask visual dashboard — live Panchang, CMC context, backtest proof |
 | `SKILL.md` | LLM Skill manifest |
 | The original `*_engine.py` modules | the live execution path (Track 1, optional) |
 

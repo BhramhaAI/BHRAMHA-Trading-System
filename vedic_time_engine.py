@@ -201,7 +201,7 @@ def get_current_nakshatra_context(dt=None):
         "stop_hunt_risk": nak["stop_hunt_risk"],
         "pada": nak["pada"],
         "action": nak["action"],
-        "win_rate": nak["win_rate"],
+        "win_rate": nak.get("prior_wr", 0),
     }
 
 

@@ -34,3 +34,8 @@ Thumbs.db
 
 # Trade-data CSV logs (stale live logs; not part of the strategy spec)
 *.csv
+
+# Runtime process artifacts
+bot_pid.txt
+*_stdout.txt
+*_stderr.txt
